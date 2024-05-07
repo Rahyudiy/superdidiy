@@ -53,6 +53,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
       start: "top 80%",
       end: "top center",
       scrub: 2,
+      markers: true,
     },
   });
   gsap.to("#me", {
@@ -64,6 +65,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
       start: "top 80%",
       end: "top center",
       scrub: 2,
+      markers: true,
     },
   });
   gsap.to("#end", {
@@ -75,6 +77,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
       start: "top 50%",
       end: "top center",
       scrub: 5,
+      markers: true,
     },
   });
   gsap.to("#say-hi", {
@@ -86,6 +89,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
       start: "top 70%",
       end: "top 60%",
       scrub: 5,
+      markers: true,
     },
   });
   gsap.to("#contact", {
@@ -97,6 +101,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
       start: "top 80%",
       end: "top 30%",
       scrub: 5,
+      markers: true,
     },
   });
  
