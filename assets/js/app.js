@@ -52,8 +52,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
       trigger: "#about",
       start: "top 80%",
       end: "top center",
-      scrub: 2,
-      markers: true,
+      scrub: 2
     },
   });
   gsap.to("#me", {
@@ -64,8 +63,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
       trigger: "#me",
       start: "top 80%",
       end: "top center",
-      scrub: 2,
-      markers: true,
+      scrub: 2
     },
   });
   gsap.to("#end", {
@@ -76,8 +74,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
       trigger: "#footer",
       start: "top 50%",
       end: "top center",
-      scrub: 5,
-      markers: true,
+      scrub: 5
     },
   });
   gsap.to("#say-hi", {
@@ -88,8 +85,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
       trigger: "#quote",
       start: "top 70%",
       end: "top 60%",
-      scrub: 5,
-      markers: true,
+      scrub: 5
     },
   });
   gsap.to("#contact", {
@@ -100,11 +96,9 @@ document.addEventListener("DOMContentLoaded", (event) => {
       trigger: "#footer",
       start: "top 80%",
       end: "top 30%",
-      scrub: 5,
-      markers: true,
+      scrub: 5
     },
   });
- 
 });
 
 const currentYear = new Date().getFullYear();
