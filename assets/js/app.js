@@ -23,6 +23,20 @@ function hitungLoading() {
       clearInterval(hitung);
       $(".hitung").addClass("hide");
       $(".preloader").addClass("active");
+      gsap.fromTo(
+        chars,
+        {
+          y: 100,
+          opacity: 0,
+        },
+        {
+          y: 0,
+          opacity: 1,
+          stagger: 0.1,
+          duration: 2,
+          ease: "power4.out",
+        }
+      );
     }
   }, 25);
 }
@@ -39,7 +53,6 @@ document.addEventListener("DOMContentLoaded", (event) => {
       start: "top 80%",
       end: "top center",
       scrub: 2,
-      markers: true,
     },
   });
   gsap.to("#me", {
@@ -51,7 +64,6 @@ document.addEventListener("DOMContentLoaded", (event) => {
       start: "top 80%",
       end: "top center",
       scrub: 2,
-      markers: true,
     },
   });
   gsap.to("#end", {
@@ -63,7 +75,6 @@ document.addEventListener("DOMContentLoaded", (event) => {
       start: "top 50%",
       end: "top center",
       scrub: 5,
-      markers: true,
     },
   });
   gsap.to("#say-hi", {
@@ -75,7 +86,6 @@ document.addEventListener("DOMContentLoaded", (event) => {
       start: "top 70%",
       end: "top 60%",
       scrub: 5,
-      markers: true,
     },
   });
   gsap.to("#contact", {
@@ -87,23 +97,9 @@ document.addEventListener("DOMContentLoaded", (event) => {
       start: "top 80%",
       end: "top 30%",
       scrub: 5,
-      markers: true,
     },
   });
-  gsap.fromTo(
-    chars,
-    {
-      y: 100,
-      opacity: 0,
-    },
-    {
-      y: 0,
-      opacity: 1,
-      stagger: 0.05,
-      duration: 2,
-      ease: "power4.out",
-    }
-  );
+ 
 });
 
 const currentYear = new Date().getFullYear();

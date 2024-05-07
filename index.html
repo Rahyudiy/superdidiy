@@ -8,23 +8,45 @@
     <title>SuperDidiy</title>
   </head>
   <body class="bg-[#242424]">
-    <div
+    <!-- <div
       class="preloader fixed top-0 flex justify-center items-center w-full h-screen z-[100000] font-bebasNue"
     >
       <h1 class="hitung relative text-white text-[10vw] z-[1]">0</h1>
-    </div>
+    </div> -->
     <div class="cursor-dot" data-cursor-dot></div>
     <div class="cursor-outline" data-cursor-outline></div>
     <nav
-      class="px-[5%] py-[2%] w-full md:inline hidden font-poppins fixed text-[#4B4B4B] bg-gray-400 bg-clip-padding backdrop-filter backdrop-blur-lg bg-opacity-10"
+      class="px-[5%] py-[1%] w-full md:flex hidden fixed bg-gray-400 bg-clip-padding backdrop-filter backdrop-blur-xl bg-opacity-10"
     >
-      <div class="flex">
-        <h1 class="text-[1.2vw]">SuperDidiy</h1>
-        <div class="w-full text-[1.2vw] flex justify-center gap-[2vw]">
-          <a href="">About Me</a>
-          <a href="">Interest</a>
-          <a href="">Contact</a>
-          <a href="">Footer</a>
+      <div class="flex w-full items-center justify-between">
+        <h1 class="text-[2.5vw] font-bebasNue text-[#F8F7F4]">
+          Di<span class="text-[#FB2C00]">y</span>
+        </h1>
+        <div class="text-[1vw] w-fit gap-[4vw] font-poppins flex">
+          <div class="flex flex-col">
+            <a
+              href="#about-me"
+              class="hover:text-[#ffffff] text-[#000000] duration-300 hover:underline"
+              >#About Me</a
+            >
+            <a
+              href="#project"
+              class="hover:text-[#ffffff] text-[#000000] duration-300 hover:underline"
+              >#Project</a
+            >
+          </div>
+          <div class="flex flex-col">
+            <a
+              href="#footer"
+              class="hover:text-[#ffffff] text-[#000000] duration-300 hover:underline"
+              >#Contact</a
+            >
+            <a
+              href="#"
+              class="hover:text-[#ffffff] text-[#000000] duration-300 hover:underline"
+              >#Card</a
+            >
+          </div>
         </div>
       </div>
     </nav>
@@ -73,6 +95,7 @@
     </section>
     <section
       class="w-full h-full flex flex-col items-center px-[5%] pt-[10%] pb-[30%] bg-[#F8F7F4]"
+      id="about-me"
     >
       <div class="w-full">
         <h1 class="text-end font-bebasNue text-[10vw] text-[#FB2C00]">Me?;</h1>
@@ -124,6 +147,7 @@
     </section>
     <section
       class="w-full h-full flex flex-col items-center px-[5%] pt-[5%] pb-[20%]"
+      id="project"
     >
       <div class="w-full">
         <h1 class="text-start font-bebasNue text-[10vw] text-[#F8F7F4]">
@@ -229,12 +253,12 @@
             </p>
             <div class="flex mt-[1vw] w-full justify-between">
               <div
-                class="flex gap-[0.5vw] items-center font-poppins md:text-[1vw] text-[2.5vw] text-[#F8F7F4]"
+                class="flex gap-[0.5vw] items-center font-poppins md:text-[1vw] text-[2vw] text-[#F8F7F4]"
               >
                 <img
                   src="./assets/image/envelope-solid.svg"
                   alt="email"
-                  class="w-[1.4vw]"
+                  class="md:w-[1.4vw] w-[1.8vw]"
                 />
                 <a
                   href="mailto:gdengurahyudiantara@gmail.com"
@@ -243,12 +267,12 @@
                 >
               </div>
               <div
-                class="flex items-center gap-[0.5vw] font-poppins text-[1vw] text-[#F8F7F4]"
+                class="flex items-center gap-[0.5vw] font-poppins md:text-[1vw] text-[2vw] text-[#F8F7F4]"
               >
                 <img
                   src="./assets/image/address-book-solid.svg"
                   alt="phone"
-                  class="w-[1.4vw]"
+                  class="md:w-[1.4vw] w-[1.8vw]"
                 />
                 <a
                   href="mailto:gdengurahyudiantara@gmail.com"
@@ -280,7 +304,7 @@
             </p>
           </div>
           <div
-            class="text-[#4B4B4B] flex-col flex md:justify-end justify-center items-end w-full font-bebasNue md:text-[1vw] text-[2vw] h-fit p-[1vw]"
+            class="text-[#4B4B4B] flex-col flex md:justify-end justify-center items-end w-full font-bebasNue md:text-[1vw] text-[3vw] h-fit p-[1vw]"
             id="tip"
           >
             <a
@@ -289,7 +313,7 @@
             >
               <img
                 src="./assets/image/ice-cream.gif"
-                class="md:w-[4vw] w-[8vw]"
+                class="md:w-[4vw] w-[9vw]"
                 alt="ice-cream"
               />
               Buy me some ice cream?
@@ -301,7 +325,7 @@
         class="border-solid border-gray-100 font-poppins border-b-2 w-full items-end flex text-[#F8F7F4]"
         id="sm"
       >
-        <div class="flex w-full items-center md:text-[1.2vw] text-[2vw]">
+        <div class="flex w-full items-center md:text-[1.2vw] text-[2.5vw]">
           <div class="w-full">
             <a href="">@SuperDidiy <span id="year"></span></a>
           </div>
