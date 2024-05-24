@@ -1,6 +1,6 @@
 # Superdidiy
 # Superdidiy Personal Website
-![SuperDidiy Logo](assets/img/logo.svg)
+![SuperDidiy Logo](assets/image/logo.svg)
 
 Repository: Superdidiy Personal Website
 
