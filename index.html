@@ -5,15 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./assets/css/output.css" />
     <link rel="stylesheet" href="./assets/css/input.css" />
+    <link rel="icon" href="./assets/image/logo.svg" />
     <title>SuperDidiy</title>
   </head>
   <body class="bg-[#242424]">
-    <div
+    <!-- <div
       class="preloader fixed top-0 flex justify-center items-center w-full h-screen z-[100000] font-bebasNue"
     >
       <h1 class="hitung relative text-white text-[10vw] z-[1]">0</h1>
-    </div>
-    <div class="cursor-dot" data-cursor-dot></div>
+    </div> -->
+    <div class="cursor-dot" data-cursor-dot id="cursor-dot"></div>
     <div class="cursor-outline" data-cursor-outline></div>
     <nav
       class="px-[5%] py-[1%] w-full md:flex hidden fixed bg-gray-400 bg-clip-padding backdrop-filter backdrop-blur-xl bg-opacity-10"
@@ -106,7 +107,7 @@
           <h1>A.K.A YUDI</h1>
         </div>
       </div>
-      <div class="w-full">
+      <div class="w-full" id="t">
         <img
           src="./assets/image/profile.png"
           alt="profile"
@@ -150,7 +151,7 @@
       id="project"
     >
       <div class="w-full">
-        <h1 class="text-start font-bebasNue text-[10vw] text-[#F8F7F4]">
+        <h1 class="text-start font-bebasNue text-[10vw] text-[#F8F7F4]" id="trg">
           Project#!
         </h1>
       </div>
@@ -274,11 +275,9 @@
                   alt="phone"
                   class="md:w-[1.4vw] w-[1.8vw]"
                 />
-                <a
-                  href="mailto:gdengurahyudiantara@gmail.com"
-                  class="tracking-wide"
-                  >+62 896 056 79977</a
-                >
+                <p class="tracking-wide" onclick="copyToClipBoard()">
+                  +62 896 056 79977
+                </p>
               </div>
             </div>
           </div>

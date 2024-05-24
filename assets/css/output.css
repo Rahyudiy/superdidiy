@@ -2791,11 +2791,6 @@ input:checked + .toggle-bg {
   padding-bottom: 15%;
 }
 
-.py-\[20vw\] {
-  padding-top: 20vw;
-  padding-bottom: 20vw;
-}
-
 .py-\[25vw\] {
   padding-top: 25vw;
   padding-bottom: 25vw;
@@ -3503,44 +3498,35 @@ input:checked + .toggle-bg {
   forced-color-adjust: none;
 }
 
-*{
+* {
   scroll-behavior: smooth;
 }
 
-body{
+body {
   cursor: none;
 }
 
-.cursor-dot{
-  width: 0.5vw;
-  height: 0.5vw;
-  background: #ff5d38;
-}
-
-.cursor-outline{
-  width: 5vw;
-  height: 5vw;
-  background-color: rgba(134, 134, 134, 0.384);
-  outline: solid 0.2vw #ff5d38;
-  box-shadow: 0px 0px 20vw #F8F7F4
-}
-
-.cursor-dot,
-.cursor-outline{
+#cursor-dot {
+  width: 1vw;
+  height: 1vw;
+  background: #f8f7f4;
+  mix-blend-mode: difference;
   position: fixed;
-  top: 0;
-  left: 0;
-  transform: translate(-50%, -50%);
+  transition: 0.2s;
   border-radius: 50%;
-  z-index: 1;
   pointer-events: none;
+  transform: scale(1);
 }
 
-.preloader{
+#t:hover ~ #cursor-dot {
+  transform: scale(6);
+}
+
+.preloader {
   background-color: #030303;
 }
 
-.preloader::before{
+.preloader::before {
   content: "Loading";
   position: absolute;
   font-size: 20vw;
@@ -3548,18 +3534,18 @@ body{
   color: #151515;
 }
 
-.preloader.active{
+.preloader.active {
   transform: translateY(-100vh);
   transition: ease-in-out 2s;
   transition-delay: 1s;
 }
 
-.hitung::after{
+.hitung::after {
   content: "%";
   font-size: 10vw;
 }
 
-.hide{
+.hide {
   opacity: 0;
   transition: 2s;
   pointer-events: none;
@@ -3835,11 +3821,6 @@ body{
 
   .md\:flex {
     display: flex;
-  }
-
-  .md\:h-fit {
-    height: -moz-fit-content;
-    height: fit-content;
   }
 
   .md\:w-\[1\.4vw\] {

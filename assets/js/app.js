@@ -1,7 +1,6 @@
 const ourText = new SplitType(".text", { types: "chars" });
 const chars = ourText.chars;
 const cursorDot = document.querySelector("[data-cursor-dot]");
-const cursorOutline = document.querySelector("[data-cursor-outline]");
 
 window.addEventListener("mousemove", function (e) {
   const posX = e.clientX;
@@ -9,9 +8,6 @@ window.addEventListener("mousemove", function (e) {
 
   cursorDot.style.left = `${posX}px`;
   cursorDot.style.top = `${posY}px`;
-
-  cursorOutline.style.left = `${posX}px`;
-  cursorOutline.style.top = `${posY}px`;
 });
 
 function hitungLoading() {
@@ -52,7 +48,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
       trigger: "#about",
       start: "top 80%",
       end: "top center",
-      scrub: 2
+      scrub: 2,
     },
   });
   gsap.to("#me", {
@@ -63,7 +59,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
       trigger: "#me",
       start: "top 80%",
       end: "top center",
-      scrub: 2
+      scrub: 2,
     },
   });
   gsap.to("#end", {
@@ -74,7 +70,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
       trigger: "#footer",
       start: "top 50%",
       end: "top center",
-      scrub: 5
+      scrub: 5,
     },
   });
   gsap.to("#say-hi", {
@@ -85,7 +81,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
       trigger: "#quote",
       start: "top 70%",
       end: "top 60%",
-      scrub: 5
+      scrub: 5,
     },
   });
   gsap.to("#contact", {
@@ -96,7 +92,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
       trigger: "#footer",
       start: "top 80%",
       end: "top 30%",
-      scrub: 5
+      scrub: 5,
     },
   });
 });
@@ -105,3 +101,17 @@ const currentYear = new Date().getFullYear();
 
 // Display the current year in the 'year' paragraph
 document.getElementById("year").textContent = `${currentYear}`;
+
+//copy phone number
+function copyToClipBoard() {
+  var no = "+6289 605 679 977";
+
+  navigator.clipboard
+    .writeText(no)
+    .then(function () {
+      alert("Phone number copied");
+    })
+    .catch(function (err) {
+      console.error(err);
+    });
+}
